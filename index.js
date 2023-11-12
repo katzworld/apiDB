@@ -8,7 +8,7 @@ const sessions = require('express-session');
 const oneDay = 1000 * 60 * 60 * 24;
 
 const Datastore = require("nedb"),
-    db = new Datastore({ filename: "./database.db", autoload: true });
+    db = new Datastore({ filename: "/database/database.db", autoload: true });
 
 
 app.use(sessions({
